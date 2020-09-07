@@ -5,8 +5,8 @@ head {
 /* Add a black background color to the top navigation */
 .topnav {
   position: static;
-  background-color:grey;
-  opacity: 50%;
+  background-color: white;
+
   overflow: hidden;
 }
 
@@ -47,8 +47,7 @@ body{
 }
 .fwh-slide{
   height: 100vh;
-  background: grey;
-  opacity: 40%;
+  background-color: rgb(177, 177, 177);
   box-sizing: border box;
   padding: 155px;
 
@@ -106,7 +105,7 @@ p {
   overflow: hidden;    
   font-family: 'Source Code Pro', monospace;  
   font-size: 28px;
-  color: rgba(255,255,255,.70);
+
 }
 
 /* Animation */
@@ -135,13 +134,23 @@ p{
   font-size: 32px;
   line-height: 41px;
 
-  color:black;
-  opacity: 95%;
+  color: rgb(87, 87, 87);
 }
 dl{
   font-size: 20px;
   font-family: 'Source Code Pro', monospace;
+  color:  rgb(87, 87, 87);
+  
 }
+
+.wrapper{
+  margin: 0 auto;
+  width: 1000px;
+}
+.img-me{
+  width: 300px;
+}
+
 h2{
   font-family: "verdana";
   font-style: normal;
@@ -149,24 +158,11 @@ h2{
   font-size: 15px;
   line-height: 4px;
 }
-head1{
-  position: absolute;
-width: 65px;
-height: 20px;
-left: 890px;
-top: 42px;
 
-font-family: sans-serif;
-font-style: normal;
-font-weight: 350;
-font-size: 15px;
-line-height: 20px;
-
-color: #000000;
+a{
+  font-family: "verdana";
 
 }
-
-
 .main{
 
   position: absolute;
@@ -184,54 +180,76 @@ line-height: 27px;
 color: #000000;
 
 }
-pic{
 
-  position: absolute;
-  width: 466px;
-  height: 560px;
-  left: 839px;
-  top: 158px;
-
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-logo {
-  position: absolute;
-  width: 60px;
-  height: 50px;
-  left: 34px;
-  top: 34px;
-
+body{
+  background: white;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-linkedin {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 200px;
-  top: 730px;
+.wrapper{
+  margin-top: 5%;
 }
 
-email {
-  position: absolute;
-  width: 22px;
-  height: 30px;
-  left: 380px;
-  top: 731px;
+.wrapper h1{
+  font-family: 'Source Code Pro', monospace ;
+  font-size: 46px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: normal;
+  color:rgb(87, 87, 87); 
 }
 
-github {
-  position: absolute;
-  width: 50px;
-  height: 25px;
-  left: 278px;
-  top: 730px;
+.mainpart{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
-twitter {
+.mainpart .section{
+  background: rgb(177, 177, 177);
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.mainpart .section h3{
+  color: white;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.mainpart .section p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.mainpart .section .team_img{
   position: absolute;
-  width: 50px;
-  height: 25px;
-  left: 470px;
-  top: 730px;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.mainpart .section .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
 }
