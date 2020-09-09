@@ -2,6 +2,12 @@
 head {
   margin: 0;
 }
+
+.img-me{
+    position: absolute;
+    top: 200px;
+    right: 200px;
+}
 /* Add a black background color to the top navigation */
 .topnav {
   position: static;
@@ -46,13 +52,17 @@ body{
   margin: 0;
 }
 .fwh-slide{
-  height: 100vh;
+  height: 30vh;
   background-color: rgb(177, 177, 177);
   box-sizing: border box;
-  padding: 155px;
-
+  padding: 200px;
+  
 }
 
+.a{
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+}
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 @media screen and (max-width: 600px) {
   .topnav a, .topnav-right {
@@ -67,8 +77,6 @@ body{
     transform: none;
   }
 }
-
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 .typewriter p {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -92,7 +100,6 @@ body{
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 body{
   margin: 0;
@@ -143,7 +150,7 @@ dl{
   
 }
 
-.wrapper{
+.main{
   margin: 0 auto;
   width: 1000px;
 }
@@ -166,90 +173,88 @@ a{
 .main{
 
   position: absolute;
-width: 580px;
-height: 440px;
-left: 91px;
-top: 225px;
+  width: 580px;
+  height: 440px;
+  left: 900px;
+  top: 0px;
 
-font-family: sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 19px;
-line-height: 27px;
-
-color: #000000;
-
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body{
-  background: white;
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-.wrapper{
-  margin-top: 5%;
-}
-
-.wrapper h1{
-  font-family: 'Source Code Pro', monospace ;
-  font-size: 46px;
-  margin-bottom: 60px;
-  text-align: center;
+  font-family: sans-serif;
+  font-style: normal;
   font-weight: normal;
-  color:rgb(87, 87, 87); 
+  font-size: 19px;
+  line-height: 27px;
+  color: #000000;
+
 }
 
-.mainpart{
+.container{
   display: flex;
-  justify-content: center;
-  width: auto;
-  text-align: center;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-.mainpart .section{
-  background: rgb(177, 177, 177);
-  margin: 5px;
-  margin-bottom: 50px;
-  width: 300px;
-  padding: 20px;
-  line-height: 20px;
-  color: #8e8b8b;  
+.container.box{
   position: relative;
-}
-
-.mainpart .section h3{
-  color: white;
-  font-size: 26px;
-  margin-top: 50px;
-}
-
-.mainpart .section p.role{
-  color: #ccc;
-  margin: 12px 0;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.mainpart .section .team_img{
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 350px;
+  padding:40px;
   background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  border-radius: 4px;
 }
 
-.mainpart .section .team_img img{
-  width: 100px;
-  height: 100px;
-  padding: 5px;
+h1 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+.social-menu ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.social-menu ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+.social-menu ul li .fa {
+  color: #000000;
+  font-size: 25px;
+  line-height: 50px;
+  transition: .5s;
+}
+.social-menu ul li .fa:hover {
+  color: #ffffff;
+}
+.social-menu ul li a {
+  position: relative;
+  top: 850px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0,0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #cd201f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #0077B5;
 }
