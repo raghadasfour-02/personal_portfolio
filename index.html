@@ -1,77 +1,155 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+	<link rel = "icon" type = "image/png" href = "img/favicon2.png"> 
     <meta charset = "UFT-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styleIndex.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet";>
-    
+	  <meta content="width=device-width, initial-scale=1" name="viewport">
+   	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link href="demo.css" rel="stylesheet" type="text/css">
+  
   </head>
 
 <body>
- <!-- Top navigation -->
+	<svg 
+	id = "logo"
+	width="758" height="71" viewBox="0 0 758 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M36.9732 67.3619L21.6066 41.3801H11.4239V67.3619H3V3.82048H23.8283C28.7036 3.82048 32.8075 4.64095 36.1401 6.28191C39.5343 7.92286 42.0645 10.1412 43.7308 12.9369C45.3971 15.7326 46.2302 18.9233 46.2302 22.5091C46.2302 26.885 44.9342 30.7443 42.3423 34.087C39.812 37.4296 35.9858 39.648 30.8636 40.7419L47.0633 67.3619H36.9732ZM11.4239 34.7251H23.8283C28.395 34.7251 31.8201 33.6311 34.1035 31.4432C36.3869 29.1945 37.5286 26.2165 37.5286 22.5091C37.5286 18.741 36.3869 15.8238 34.1035 13.7574C31.8818 11.691 28.4568 10.6578 23.8283 10.6578H11.4239V34.7251Z" stroke="white" stroke-width="5"/>
+		<path d="M97.4583 53.2314H69.317L64.1331 67.3619H55.2464L78.574 4.18513H88.2939L111.529 67.3619H102.642L97.4583 53.2314ZM95.0515 46.4853L83.3877 14.3955L71.7238 46.4853H95.0515Z" stroke="white" stroke-width="5"/>
+		<path d="M170.573 22.2356C168.783 18.5283 166.191 15.6718 162.797 13.6662C159.403 11.5998 155.453 10.5666 150.948 10.5666C146.443 10.5666 142.37 11.5998 138.729 13.6662C135.149 15.6718 132.31 18.5891 130.212 22.418C128.176 26.1861 127.157 30.5619 127.157 35.5456C127.157 40.5292 128.176 44.9051 130.212 48.6732C132.31 52.4413 135.149 55.3586 138.729 57.425C142.37 59.4306 146.443 60.4334 150.948 60.4334C157.243 60.4334 162.427 58.5797 166.5 54.8724C170.573 51.165 172.949 46.151 173.628 39.8303H147.893V33.0842H182.607V39.4656C182.113 44.6924 180.447 49.4937 177.608 53.8696C174.769 58.1847 171.036 61.6185 166.407 64.1711C161.779 66.6629 156.625 67.9088 150.948 67.9088C144.962 67.9088 139.5 66.5414 134.563 63.8065C129.626 61.0108 125.707 57.1515 122.807 52.2286C119.968 47.3057 118.548 41.7447 118.548 35.5456C118.548 29.3464 119.968 23.7854 122.807 18.8626C125.707 13.8789 129.626 10.0196 134.563 7.28471C139.5 4.48901 144.962 3.09116 150.948 3.09116C157.798 3.09116 163.846 4.7625 169.092 8.10519C174.399 11.4479 178.256 16.158 180.663 22.2356H170.573Z" stroke="white" stroke-width="5"/>
+		<path d="M243.455 3.82048V67.3619H235.031V38.554H202.169V67.3619H193.745V3.82048H202.169V31.7167H235.031V3.82048H243.455Z" stroke="white" stroke-width="5"/>
+		<path d="M295.978 53.2314H267.836L262.652 67.3619H253.766L277.093 4.18513H286.813L310.048 67.3619H301.161L295.978 53.2314ZM293.571 46.4853L281.907 14.3955L270.243 46.4853H293.571Z" stroke="white" stroke-width="5"/>
+		<path d="M340.303 3.82048C347.338 3.82048 353.417 5.12716 358.539 7.74053C363.723 10.2931 367.673 13.9701 370.388 18.7714C373.165 23.5727 374.554 29.2249 374.554 35.7279C374.554 42.231 373.165 47.8831 370.388 52.6844C367.673 57.425 363.723 61.0715 358.539 63.6241C353.417 66.1159 347.338 67.3619 340.303 67.3619H320.215V3.82048H340.303ZM340.303 60.5245C348.634 60.5245 354.99 58.367 359.372 54.0519C363.754 49.676 365.945 43.568 365.945 35.7279C365.945 27.827 363.723 21.6583 359.28 17.2216C354.898 12.7849 348.572 10.5666 340.303 10.5666H328.639V60.5245H340.303Z" stroke="white" stroke-width="5"/>
+		<path d="M448.483 53.2314H420.342L415.158 67.3619H406.271L429.599 4.18513H439.319L462.554 67.3619H453.667L448.483 53.2314ZM446.076 46.4853L434.412 14.3955L422.749 46.4853H446.076Z" stroke="white" stroke-width="5"/>
+		<path d="M493.178 68C488.92 68 485.094 67.2707 481.7 65.8121C478.367 64.2927 475.744 62.2263 473.831 59.6129C471.918 56.9388 470.931 53.8696 470.869 50.4053H479.848C480.157 53.3834 481.391 55.9056 483.551 57.972C485.773 59.9776 488.982 60.9804 493.178 60.9804C497.19 60.9804 500.337 60.0079 502.621 58.0631C504.966 56.0575 506.138 53.5049 506.138 50.4053C506.138 47.9743 505.459 45.9991 504.102 44.4797C502.744 42.9603 501.047 41.8055 499.01 41.0154C496.974 40.2253 494.228 39.3745 490.772 38.4628C486.513 37.3689 483.088 36.2749 480.496 35.1809C477.966 34.087 475.775 32.3852 473.924 30.0757C472.134 27.7055 471.239 24.5451 471.239 20.5947C471.239 17.1304 472.134 14.0612 473.924 11.3871C475.714 8.71295 478.213 6.64656 481.422 5.18794C484.693 3.72931 488.427 3 492.623 3C498.671 3 503.608 4.48901 507.434 7.46704C511.322 10.4451 513.513 14.3955 514.007 19.3184H504.75C504.441 16.8873 503.145 14.7602 500.862 12.9369C498.578 11.0528 495.554 10.1108 491.79 10.1108C488.272 10.1108 485.403 11.0224 483.181 12.8457C480.959 14.6082 479.848 17.1001 479.848 20.3212C479.848 22.6307 480.496 24.5147 481.792 25.9734C483.15 27.432 484.785 28.5563 486.699 29.3464C488.673 30.0757 491.42 30.9266 494.937 31.899C499.196 33.0538 502.621 34.2085 505.213 35.3633C507.805 36.4572 510.026 38.1893 511.878 40.5596C513.729 42.8691 514.655 46.0295 514.655 50.0407C514.655 53.1403 513.822 56.0575 512.155 58.7924C510.489 61.5274 508.021 63.7457 504.75 65.4474C501.479 67.1491 497.622 68 493.178 68Z" stroke="white" stroke-width="5"/>
+		<path d="M563.524 3.82048V10.5666H535.475V31.9902H558.247V38.7363H535.475V67.3619H527.051V3.82048H563.524Z" stroke="white" stroke-width="5"/>
+		<path d="M602.95 68C596.964 68 591.502 66.6325 586.565 63.8976C581.628 61.1019 577.709 57.2426 574.809 52.3198C571.97 47.3361 570.55 41.7447 570.55 35.5456C570.55 29.3464 571.97 23.7854 574.809 18.8626C577.709 13.8789 581.628 10.0196 586.565 7.28471C591.502 4.48901 596.964 3.09116 602.95 3.09116C608.998 3.09116 614.49 4.48901 619.427 7.28471C624.364 10.0196 628.252 13.8485 631.091 18.7714C633.93 23.6943 635.349 29.2856 635.349 35.5456C635.349 41.8055 633.93 47.3969 631.091 52.3198C628.252 57.2426 624.364 61.1019 619.427 63.8976C614.49 66.6325 608.998 68 602.95 68ZM602.95 60.798C607.455 60.798 611.497 59.7648 615.077 57.6985C618.718 55.6321 621.556 52.6844 623.593 48.8555C625.691 45.0267 626.74 40.59 626.74 35.5456C626.74 30.4404 625.691 26.0037 623.593 22.2356C621.556 18.4067 618.748 15.4591 615.169 13.3927C611.59 11.3263 607.517 10.2931 602.95 10.2931C598.383 10.2931 594.31 11.3263 590.731 13.3927C587.151 15.4591 584.312 18.4067 582.214 22.2356C580.178 26.0037 579.159 30.4404 579.159 35.5456C579.159 40.59 580.178 45.0267 582.214 48.8555C584.312 52.6844 587.151 55.6321 590.731 57.6985C594.372 59.7648 598.445 60.798 602.95 60.798Z" stroke="white" stroke-width="5"/>
+		<path d="M654.709 3.82048V44.0238C654.709 49.676 656.097 53.8696 658.874 56.6045C661.713 59.3394 665.632 60.7069 670.631 60.7069C675.568 60.7069 679.425 59.3394 682.202 56.6045C685.041 53.8696 686.46 49.676 686.46 44.0238V3.82048H694.884V43.9327C694.884 49.2202 693.804 53.6872 691.644 57.3338C689.484 60.9196 686.553 63.5937 682.85 65.3562C679.209 67.1187 675.105 68 670.538 68C665.971 68 661.837 67.1187 658.134 65.3562C654.493 63.5937 651.592 60.9196 649.432 57.3338C647.334 53.6872 646.285 49.2202 646.285 43.9327V3.82048H654.709Z" stroke="white" stroke-width="5"/>
+		<path d="M742.91 67.3619L727.543 41.3801H717.361V67.3619H708.937V3.82048H729.765C734.64 3.82048 738.744 4.64095 742.077 6.28191C745.471 7.92286 748.001 10.1412 749.668 12.9369C751.334 15.7326 752.167 18.9233 752.167 22.5091C752.167 26.885 750.871 30.7443 748.279 34.087C745.749 37.4296 741.923 39.648 736.8 40.7419L753 67.3619H742.91ZM717.361 34.7251H729.765C734.332 34.7251 737.757 33.6311 740.04 31.4432C742.324 29.1945 743.465 26.2165 743.465 22.5091C743.465 18.741 742.324 15.8238 740.04 13.7574C737.819 11.691 734.394 10.6578 729.765 10.6578H717.361V34.7251Z" stroke="white" stroke-width="5"/>
+		</svg>
+		
+	<script src = "app.js"></script>
+	<body onload="myFunction()" style="margin:0;">
+
+		<div id="loader"></div>
+		
+		<div style="display:none;" id="myDiv" class="animate-bottom">
+
+		  <!-- Top navigation -->
  <div class="topnav">
-
-  <!-- Centered link -->
-  <div class="topnav-centered">
-    <a href="involvement.html" class = hvr-grow> Involvement</a>
-    <a href="projects.html"class = hvr-grow> Projects</a>
-    <a href="index.html" class="active">Home</a>
-    <a href="education.html"class = hvr-grow> Education</a>
-    <a href="contactme.html"class = hvr-grow> Contact me</a>
-  </div>
-
-
-</div>
-
-
-   <section class="fwh-slide">
-    <div class="main">
-      <img class ="img-me" src ="img/my pic.png" alt= "Raghad Asfour">
-    </div>
-     <p>Hello! My name is Raghad.</p>
-     <dl> A Systems Design Engineering student at the University of <br> Waterloo with an interest in coding and a passion for <br> mentorship.</dl>
-    
-   </section> 
-     
-    <div class="container">
-        <div class="box">
-          <div class="icon">01</div>
-          <div class= "content"></div>
-          <h3>Service name</h3>
-          <dl>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi vel eos cum fuga debitis. Vero et amet, eaque praesentium distinctio minima deleniti numquam magni sequi voluptas sunt natus cupiditate repellendus?</dl>
-          <a href = "#">Read More</a>
-        </div>
-      </div>
-
-        <div class="box">
-          <div class="icon">02</div>
-          <div class= "content"></div>
-          <h3>Service name</h3>
-          <dl>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi vel eos cum fuga debitis. Vero et amet, eaque praesentium distinctio minima deleniti numquam magni sequi voluptas sunt natus cupiditate repellendus?</dl>
-          <a href = "#">Read More</a>
-        </div>
-      </div>
-
-        <div class="box">
-          <div class="icon">03</div>
-          <div class= "content"></div>
-          <h3>Service name</h3>
-          <dl>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi vel eos cum fuga debitis. Vero et amet, eaque praesentium distinctio minima deleniti numquam magni sequi voluptas sunt natus cupiditate repellendus?</dl>
-          <a href = "#">Read More</a>
-        </div>
-      </div>
-    </div>
+	 <a href= "contactme.html"class = hvr-grow> 04. Contact me</a>
+	 <a href="involvement.html"class = hvr-grow> 03. Involvement</a>
+	  <a href="projects.html"class = hvr-1qgrow> 02. Projects</a>
+	  <a href="education.html"class = hvr-grow> 01. Education</a>
+	  <a href="index.html" class= hvr-grow> 00. Home</a>
   
-    <div class="social-menu">
-    <ul>
-      <li><a href="https://www.facebook.com/people/Raghad-Asfour/100008281800338"><i class="fa fa-facebook"></i></a></li>
-      <li><a href="https://github.com/raghadasfour-02"><i class="fa fa-github"></i></a></li>
-      <li><a href="mailto: info@raghadasfour.com"><i class="fa fa-google"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/raghadasfour/"><i class="fa fa-linkedin"></i></a></li>
-    </ul>
   </div>
-</section> 
+  
+	 <section class="fwh-slide">
+	  <div class="main">
+	   <p>Hello! My name is </p>
+	   <br> </br>
+	   <p2> Raghad Asfour. </p2>
+	   <br> </br>
+	   <p3> Welcome to my porfolio.</p3>
+	  </div>
+	</section> 
+	<br>
+	<style>
+		.wrapper{
+		  display:grid;
+		  grid-template-columns:1fr 2fr 1fr;
+		  grid-auto-rows:minmax(100px, auto);
+		  grid-gap:1em;
+		  justify-items:normal;
+		  align-items:normal;
+		  margin-left: 70px;
+		  margin-right: 70px;
+		
+		}
+	
+		.wrapper > div{
+		  padding:1em;
+		}
+		
+
+
+	
+		.box1{
+			background-image: ("education.png");
+		  grid-column:1/3;
+		  grid-row: 1/3;
+		  border-radius: 15px 50px 50px 15px;
+		  border: 2px solid #64FFDA;
+		 
+		}
+	
+		.box2{
+		  grid-column:3;
+		  grid-row:1/5;
+		  border-radius: 50px 15px 30px;
+		  border: 2px solid #64FFDA;
+		}
+	
+		.box3{
+		  grid-column:2/3;
+		  grid-row:3/5;
+		  border-radius: 50px 50px 15px 15px;
+		  border: 2px solid #64FFDA;
+		}
+	
+		.box4{
+		  grid-column:1;
+		  grid-row:3/5;
+		  border-radius: 15px 50px 15px 15px;
+		  border: 2px solid #64FFDA;
+		}
+		.box1:hover, .box2:hover, .box3:hover, .box4:hover {
+  background-color: #caece4e1;
+  transition: 0.25s ease-in-out;
+  border: 1px solid white;
+  cursor: pointer;
+}
+	
+	  </style>
+	</head>
+	<body>
+	  <div class="wrapper">
+		<div class="box box1" href = "education.html">Education </div>
+		<div class="box box2" href = "projects.html">Projects</div>
+		<div class="box box3" href = "involvement.html">Involvement</div>
+		<div class="box box4" href = "contactme.html">Contact me</div>
+	  </div>
+	</body>
+
+	<div class="social-menu">
+	  <ul>
+		<li><a href="https://www.facebook.com/people/Raghad-Asfour/100008281800338"><i class="fa fa-facebook"></i></a></li>
+		<li><a href="https://github.com/raghadasfour-02"><i class="fa fa-github"></i></a></li>
+		<li><a href="mailto: info@raghadasfour.com"><i class="fa fa-google"></i></a></li>
+		<li><a href="https://www.linkedin.com/in/raghadasfour/"><i class="fa fa-linkedin"></i></a></li>
+	  </ul>
+	</div>
+		</div>
+		
+		<script>
+		var myVar;
+		
+		function myFunction() {
+		  myVar = setTimeout(showPage, 4500);
+		}
+		
+		function showPage() {
+		  document.getElementById("logo").style.display = "none";
+		  document.getElementById("myDiv").style.display = "block";
+		}
+		</script>
+		
+		</body>	
  
+
+</body>
 </html>

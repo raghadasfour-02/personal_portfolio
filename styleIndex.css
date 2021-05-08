@@ -1,46 +1,110 @@
-
-head {
-  margin: 0;
+#logo{
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  animation: fill 0.5s ease forwards 3s;
 }
-
-.img-me{
-    position: absolute;
-    top: 200px;
-    right: 200px;
+#logo path:nth-child(1){
+  stroke-dasharray: 349.7790832519531;
+  stroke-dashoffset: 349.7790832519531;
+  animation: line-anim 2s ease forwards;
 }
-/* Add a black background color to the top navigation */
+#logo path:nth-child(2){
+  stroke-dasharray: 312;
+  stroke-dashoffset: 312;
+  animation: line-anim 2s ease forwards 0.2s;
+}
+#logo path:nth-child(3){
+  stroke-dasharray: 406;
+  stroke-dashoffset: 406;
+  animation: line-anim 2s ease forwards 0.4s;
+}
+#logo path:nth-child(4){
+  stroke-dasharray: 339;
+  stroke-dashoffset: 339;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+#logo path:nth-child(5){
+  stroke-dasharray: 312;
+  stroke-dashoffset: 312;
+  animation: line-anim 2s ease forwards 0.8s;
+}
+#logo path:nth-child(6){
+  stroke-dasharray: 364;
+  stroke-dashoffset: 364;
+  animation: line-anim 2s ease forwards 1.0s;
+}
+#logo path:nth-child(7){
+  stroke-dasharray: 312;
+  stroke-dashoffset: 312;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+#logo path:nth-child(8){
+  stroke-dasharray: 315;
+  stroke-dashoffset: 315;
+  animation: line-anim 2s ease forwards 1.4s;
+}
+#logo path:nth-child(9){
+  stroke-dasharray: 245;
+  stroke-dashoffset: 245;
+  animation: line-anim 2s ease forwards 1.6s;
+}
+#logo path:nth-child(10){
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+#logo path:nth-child(11){
+  stroke-dasharray: 307;
+  stroke-dashoffset: 307;
+  animation: line-anim 2s ease forwards 2.0s;
+}
+#logo path:nth-child(12){
+  stroke-dasharray: 349;
+  stroke-dashoffset: 349;
+  animation: line-anim 2s ease forwards 2.2s;
+}
+@keyframes line-anim{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill{
+  from{
+    fill:#0a192f;
+  }
+  to{
+    fill: white;
+  }
+}
 .topnav {
   position: static;
-  background-color: white;
+  background-color: #0a192f;
 
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  color:black;
+  color:#64ffda;
   opacity: 80%;
   text-align: center;
   text-decoration: none;
+  font-family: 'Source Code Pro', monospace;
+  font-style: normal;
+  font-weight: normal;
   font-size: 17px;
-}
-.topnav{
-  border:1px solid #ccc;
-  border-width:1px 0;
-  list-style:none;
-  margin:0;
-  padding: 20px;
-  text-align:center;
+  
 }
 
 .topnav a{
-  display:inline-block;
-  padding:10px;
+  padding: 20px 24px;
+  float: right;
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #0a192f;
+  color: white;
 }
 
 /* Add a color to the active/current link */
@@ -52,13 +116,27 @@ body{
   margin: 0;
 }
 .fwh-slide{
-  height: 30vh;
-  background-color: rgb(177, 177, 177);
+  height: 40vh;
+  background-color: #0a192f;
   box-sizing: border box;
   padding: 200px;
   
 }
-
+body { counter-reset: H1; } 	/* Create the counter for H1 */
+h1:before {
+  content: counter(H1) ". "; 	/* Print the H1 number */
+  counter-increment: H1; 	/* Add 1 to next H1 */
+}
+h1 { counter-reset: H2; }
+h2:before {
+  content: counter(H1) "." counter(H2) " ";
+  counter-increment: H2;
+}
+h2 { counter-reset: H3; }
+h3:before {
+  content: counter(H1) "." counter(H2) "." counter(H3) " ";
+  counter-increment:H3;
+}
 .a{
   font-family: 'Source Code Pro', monospace;
   font-size: 30px;
@@ -78,84 +156,54 @@ body{
   }
 }
 
-.typewriter p {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; 
-  animation: 
-    typing 3.5s steps(45, end),
-    blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
-
 body{
   margin: 0;
-  background-color:white;  
+  background-color:#0a192f;  
 }
 
-p {
-  border-right: solid 3px rgba(0,255,0,.75);
-  white-space: nowrap;
-  overflow: hidden;    
-  font-family: 'Source Code Pro', monospace;  
-  font-size: 28px;
-
-}
-
-/* Animation */
-p {
-  animation: animated-text 2s steps(29) 1s 1 normal both,
-             animated-cursor 600ms steps(29) infinite;
-}
-
-/* text animation */
-
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 472px;}
-}
-
-/* cursor animations */
-
-@keyframes animated-cursor{
-  from{border-right-color: rgba(0,255,0,.75);}
-  to{border-right-color: transparent;}
-}
 p{
   font-family: 'Source Code Pro', monospace;
   font-style: normal;
   font-weight: normal;
-  font-size: 32px;
-  line-height: 41px;
+  font-size: 22px;
+  line-height: 0 px;
 
-  color: rgb(87, 87, 87);
+  color: #64ffda;
 }
-dl{
-  font-size: 20px;
-  font-family: 'Source Code Pro', monospace;
-  color:  rgb(87, 87, 87);
-  
+p2{
+  font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70.8px;
+  line-height: 00px;
+
+  color:#CCD6F6;
+}
+p3{
+  font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70.8px;
+  line-height: 80px;
+
+  color: #a8b2d1;
+}
+@keyframes transitionIn{
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }
 
 .main{
-  margin: 0 auto;
-  width: 1000px;
-}
-.img-me{
-  width: 300px;
+  animation: transitionIn 0.75s;
+  margin: 10px;
+  width: 50px;
 }
 
 h2{
@@ -171,12 +219,11 @@ a{
 
 }
 .main{
-
   position: absolute;
-  width: 580px;
+  width: 780px;
   height: 440px;
-  left: 900px;
-  top: 0px;
+  left: 200px;
+  top: 150px;
 
   font-family: sans-serif;
   font-style: normal;
@@ -203,19 +250,24 @@ a{
 
 h1 {
   text-align: center;
-}
+  font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+  color: #CCD6F6;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
 
-h1 {
-  text-align: center;
+}
+/*  Responsive social media menu */
+.social-menu{
+  margin-bottom: 80px;
 }
 .social-menu ul {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 7%;
   transform: translate(-50%, -50%);
   padding: 0;
   margin: 0;
-  display: flex;
 }
 .social-menu ul li {
   list-style: none;
@@ -229,10 +281,12 @@ h1 {
 }
 .social-menu ul li .fa:hover {
   color: #ffffff;
+
 }
 .social-menu ul li a {
   position: relative;
-  top: 850px;
+  margin: 10px;
+  top: 80px;
   display: block;
   width: 50px;
   height: 50px;
