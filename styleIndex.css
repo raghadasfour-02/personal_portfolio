@@ -83,8 +83,26 @@
 
   overflow: hidden;
 }
+body {
+  counter-reset: h2counter;
+}
+.topnav a:before {
+	content: "0" counter(h2counter) ".\0000a0\0000a0";
+	counter-increment: h2counter;
+	counter-reset: h3counter;
+}
 
 /* Style the links inside the navigation bar */
+.topnav a:before{
+  color:#64ffda;
+  opacity: 80%;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Source Code Pro', monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
 .topnav a {
   color:#64ffda;
   opacity: 80%;
@@ -93,12 +111,12 @@
   font-family: 'Source Code Pro', monospace;
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 14px;
   
 }
 
 .topnav a{
-  padding: 20px 24px;
+  padding: 20px 14px;
   float: right;
 }
 /* Change the color of links on hover */
@@ -122,20 +140,9 @@ body{
   padding: 200px;
   
 }
-body { counter-reset: H1; } 	/* Create the counter for H1 */
-h1:before {
-  content: counter(H1) ". "; 	/* Print the H1 number */
-  counter-increment: H1; 	/* Add 1 to next H1 */
-}
-h1 { counter-reset: H2; }
-h2:before {
-  content: counter(H1) "." counter(H2) " ";
-  counter-increment: H2;
-}
-h2 { counter-reset: H3; }
-h3:before {
-  content: counter(H1) "." counter(H2) "." counter(H3) " ";
-  counter-increment:H3;
+/* Headings counter */
+body {
+  counter-reset: h2counter;
 }
 .a{
   font-family: 'Source Code Pro', monospace;
@@ -161,6 +168,15 @@ body{
   background-color:#0a192f;  
 }
 
+h2{
+  font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70.8px;
+  line-height: 00px;
+
+  color:#CCD6F6;
+}
 p{
   font-family: 'Source Code Pro', monospace;
   font-style: normal;
