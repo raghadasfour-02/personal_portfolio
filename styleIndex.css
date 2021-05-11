@@ -1,4 +1,3 @@
-/*Transition Raghad Asfour */
 #logo{
   position: absolute;
   top: 40%;
@@ -85,15 +84,6 @@ html {
 .contactme{
   background: blue;
 }
-/* Navigation bar counter */
-body {
-  counter-reset: h2counter;
-}
-.topnav a:before {
-	content: "0" counter(h2counter) ".\0000a0\0000a0";
-	counter-increment: h2counter;
-	counter-reset: h3counter;
-}
 
 /* Style the links inside the navigation bar */
 .topnav {
@@ -164,9 +154,14 @@ body{
   padding: 200px;
 }
 
-/* Headings counter */
+/* Navigation bar counter */
 body {
   counter-reset: h2counter;
+}
+.topnav a:before {
+	content: "0" counter(h2counter) ".\0000a0\0000a0";
+	counter-increment: h2counter;
+	counter-reset: h3counter;
 }
 .a{
   font-family: 'Source Code Pro', monospace;
@@ -177,6 +172,7 @@ body{
   margin: 0;
   background-color:#0a192f;  
 }
+/* Heading styles */
 
 h2{
   font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
@@ -184,17 +180,24 @@ h2{
   font-weight: bold;
   font-size: 70.8px;
   line-height: 00px;
+
   color:#CCD6F6;
-  position: absolute;
-  top: 800px;
-  left: 100px;
 }
 h7 {
-    font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+  font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70.8px;
+  line-height: 00px;
+
+  color:#CCD6F6;
+}
+p4{
+  font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
     font-style: normal;
     color:#CCD6F6;
     position: absolute;
-    top: 1400px;
+    top: 10px;
     left: 100px;
     font-style: normal;
     font-weight: normal;
@@ -273,6 +276,11 @@ a{
   color: #000000;
 
 }
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 .container.box{
   position: relative;
@@ -348,6 +356,7 @@ h1 {
 .social-menu{
   margin-bottom: 80px;
 }
+
 .social-menu ul {
   position: absolute;
   top: 40%;
@@ -356,6 +365,7 @@ h1 {
   padding: 0;
   margin: 0;
 }
+
 .social-menu ul li {
   list-style: none;
   margin: 0 10px;
@@ -368,7 +378,6 @@ h1 {
 }
 .social-menu ul li .fa:hover {
   color: #ffffff;
-
 }
 .social-menu ul li a {
   position: relative;
@@ -384,6 +393,7 @@ h1 {
   transform: translate(0,0px);
   box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
 }
+
 .social-menu ul li a:hover {
   transform: rotate(0deg) skew(0deg) translate(0, -10px);
 }
