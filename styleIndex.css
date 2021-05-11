@@ -202,12 +202,11 @@ h2{
   font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 70.8px;
+  font-size: 18px;
   line-height: 00px;
   position: absolute;
-  top: 800px;
-  left: 100px;
-
+  top: 820px;
+  left: 75px;
   color:#CCD6F6;
 }
 h7 {
@@ -278,13 +277,7 @@ p3{
   width: 50px;
 }
 
-h2{
-  font-family: "verdana";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 4px;
-}
+
 
 a{
   font-family: "verdana";
@@ -315,6 +308,11 @@ h1 {
   font-size: 25px;
 
 }
+span:after,
+span:before{
+    content:"\00a0\00a0\00a0\00a0\00a0";
+    text-decoration:line-through;
+}
 /* Style CSS grid*/
 .wrapper{
   padding-top: 150px;
@@ -342,7 +340,7 @@ h1 {
 }
 
 .box2{
-  background-image: url("img/tfg.jpg");
+  background-image: url("img/trillium.png");
   grid-column:3;
   grid-row:1/5;
   border-radius: 50px 15px 15px 50px;
@@ -350,6 +348,7 @@ h1 {
 }
 
 .box3{
+  background-image: url("img/netact.png");
   grid-column:2/3;
   grid-row:3/5;
   border-radius: 50px 50px 15px 15px;
@@ -357,15 +356,16 @@ h1 {
 }
 
 .box4{
+  background-image: url("img/stem.png");
   grid-column:1;
   grid-row:3/5;
   border-radius: 15px 50px 15px 15px;
   border: 2px solid #64FFDA;
 }
 .box1:hover, .box2:hover, .box3:hover, .box4:hover {
-  background-color: #caece4e1;
+  background-color: #CCD6F6;
   transition: 0.25s ease-in-out;
-  border: 1px solid white;
+  border: 1px solid #CCD6F6;
   cursor: pointer;
 }
 
