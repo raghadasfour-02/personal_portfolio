@@ -106,7 +106,27 @@ img:hover {
 html {
   scroll-behavior: smooth;
 }
-
+/*Parallax Effect */
+.container{
+  padding-top: 200px;
+  max-width: 960 px;
+  margin: 0 auto;
+  background: #0000;
+}
+.parallax{
+  background: url('./img/code.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+}
+.cbox{
+  height: 40px;
+  width: 40px;
+  position: aboslute;
+  background-color: #0a192f;
+  top: 700px;
+  z-index: 100;
+}
 /* Style the links inside the navigation bar */
 .topnav {
   position: static;
@@ -171,7 +191,7 @@ body{
   margin: 0;
 }
 .fwh-slide{
-  height: 40vh;
+  height: 30vh;
   background-color: #0a192f;
   box-sizing: border box;
   padding: 200px;
@@ -198,7 +218,7 @@ body{
 /* Heading styles */
 
 h2{
-  padding-top:30px;
+  padding-top:50px;
   font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -216,7 +236,6 @@ h7 {
   font-size: 70.8px;
   line-height: 00px;
   position: absolute;
-  top: 1500px;
   left: 100px;
 
   color:#CCD6F6;
@@ -315,7 +334,7 @@ span:before{
 }
 /* Style CSS grid*/
 .wrapper{
-  padding-top: 150px;
+  padding-top: 190px;
   display:grid;
   grid-template-columns:1fr 2fr 1fr;
   grid-auto-rows:minmax(100px, auto);
@@ -425,4 +444,14 @@ span:before{
 }
 .social-menu ul li:nth-child(4) a:hover {
   background-color: #0077B5;
+}
+/* Footer */
+.footer{
+  position: absolute;
+  height: 200px;
+  top: 1220px;
+  left: 470px;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
