@@ -108,8 +108,8 @@ html {
 }
 /*Parallax Effect */
 .container{
-  padding-top: 200px;
-  max-width: 960 px;
+  padding-top: 100px;
+  max-width: 950 px;
   margin: 0 auto;
   background: #0000;
 }
@@ -117,15 +117,17 @@ html {
   background: url('./img/code.jpg');
   background-size: cover;
   background-attachment: fixed;
-  height: 500px;
+  height: 600px;
 }
 .cbox{
-  height: 40px;
-  width: 40px;
-  position: aboslute;
-  background-color: #0a192f;
-  top: 700px;
-  z-index: 100;
+  border-radius: 25px;
+  background: #0a192f;
+  padding: 20px;
+  width: 400px;
+  height: 150px;
+  position: absolute;
+  top: 1650px;
+  left: 520px;
 }
 /* Style the links inside the navigation bar */
 .topnav {
@@ -233,11 +235,12 @@ h7 {
   font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 70.8px;
+  font-size: 35px;
   line-height: 00px;
   position: absolute;
-  left: 100px;
-
+  top: 1700px;
+  left: 600px;
+  z-index: 1000;
   color:#CCD6F6;
 }
 p4{
@@ -249,8 +252,13 @@ p4{
     left: 100px;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
-    line-height: 4px;
+    font-size: 18px;
+    line-height: 14px;
+    position: absolute;
+    top: 1740px;
+    left: 600px;
+    text-align: center;
+    z-index: 2000;
 }
 p{
   font-family: 'Source Code Pro', monospace;
@@ -289,15 +297,11 @@ p3{
     transform: rotateX(0);
   }
 }
-
 .main{
   animation: transitionIn 0.75s;
   margin: 10px;
   width: 50px;
 }
-
-
-
 a{
   font-family: "verdana";
 
@@ -308,7 +312,6 @@ a{
   height: 440px;
   left: 200px;
   top: 150px;
-
   font-family: sans-serif;
   font-style: normal;
   font-weight: normal;
