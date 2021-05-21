@@ -102,6 +102,7 @@ img {
 img:hover {
     opacity: 0.5;
 }
+
 /* Scrolling effect */
 html {
   scroll-behavior: smooth;
@@ -131,34 +132,34 @@ html {
 }
 /* Style the links inside the navigation bar */
 .topnav {
-  position: static;
-  top: 0;
+  position: absolute;
+  top: 10px;
+  left: 300px;
   z-index: 1;
   display: flex;
   width: 100%;
-  height: 60px;
 }
 .topnav a:before{
   color:#64ffda;
   opacity: 80%;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
   font-family: 'Source Code Pro', monospace;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
 }
 .topnav a {
   display:inline-block;
   padding:10px;
   color:#64ffda;
   opacity: 80%;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
   font-family: 'Source Code Pro', monospace;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
 }
 .topnav ul{
   display: flex;
@@ -253,10 +254,10 @@ p4{
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 14px;
+    line-height: 17px;
     position: absolute;
     top: 1740px;
-    left: 600px;
+    left: 630px;
     text-align: center;
     z-index: 2000;
 }
@@ -334,6 +335,42 @@ span:after,
 span:before{
     content:"\00a0\00a0\00a0\00a0\00a0";
     text-decoration:line-through;
+}
+/*ChatBot*/
+.chat_icon{
+	position: fixed;
+	bottom: 0;
+	right: 30px;
+	z-index: 1000;
+	padding: 0;
+	font-size: 80px;
+	color: #fff;
+	cursor: pointer;
+}
+.chat_box{
+	width: 400px;
+	height: 80vh;
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+	background:#dedede;
+	z-index: 1000;
+	transition: all 0.3s ease-out;
+	transform: scaleY(0);
+}
+.chat_box.active{
+	transform: scaleY(1);
+}
+#messages{
+	padding: 20px;
+}
+.my-conv-form-wrapper textarea{
+	height: 30px;
+	overflow: hidden;
+	resize: none;
+}
+.hidden{
+	display: none !important;
 }
 /* Style CSS grid*/
 .wrapper{

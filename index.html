@@ -41,18 +41,16 @@
 
 		  <!-- Top navigation -->
 
-
+		  <nav class="topnav">
+			<ul> 
+			<li> <a href="#home">Home</a></li>
+			<li> <a href="#projects">Projects</a></li>
+			<li> <a href="#contactme" >Contact Me</a></li>
+		   </ul>
+	   </nav>
 
 	 <div id = "home" class="fwh-slide">
-		<div class="container">
-			<nav class="topnav">
-				<ul> 
-				<li> <a href="#home">Home</a></li>
-				<li> <a href="#projects">Projects</a></li>
-				<li> <a href="#contactme" >Contact Me</a></li>
-			   </ul>
-		   </nav>
-		</div>
+
 		   
 	  <div class="main">
 	   <p>Hello! My name is </p>
@@ -66,6 +64,65 @@
 	<br></br>
 	<br></br>
 	<br></br>
+	<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	
+	<!-- ChatBot -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.convform.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	
+	</head>
+	<body>
+	<!-- ChatBot -->
+	<div class="chat_icon">
+		<i class="fa fa-comments" aria-hidden="true"></i>
+	</div>
+	
+	<div class="chat_box">
+		<div class="my-conv-form-wrapper">
+			<form action="" method="GET" class="hidden">
+	
+		  <select data-conv-question="Hello! How can I help you" name="category">
+			<option value="WebDevelopment">Website Development ?</option>
+			<option value="DigitalMarketing">Digital Marketing ?</option>
+		  </select>
+	
+		  <div data-conv-fork="category">
+			<div data-conv-case="WebDevelopment">
+			  <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">    
+			</div>
+			<div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+			  <input type="text" name="companyName" data-conv-question="Please, enter your company name"> 
+			</div>
+		  </div>
+	
+		  <input type="text" name="name" data-conv-question="Please, Enter your name">
+	
+		  <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+	
+		  <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+	
+		  <select data-conv-question="Please Conform">
+			<option value="Yes">Conform</option>
+		  </select>
+	
+		  </form>
+		</div>
+	</div>
+	<!-- ChatBot end -->
+	
 	
 <div id ="projects" class="wrapper">
 	<h2> <span>02. What I'm working on right now<span></span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
@@ -80,8 +137,8 @@
 	<div class = "parallax">
 			<h7> <span>Contact me</span></h7>
 			<p4> 
-				Phone Number: (647) 809 - 9667 <br> </br>
-				Email: raghad.asfour@uwaterloo.ca
+				(647) 809 - 9667 <br> </br>
+				raghad.asfour@uwaterloo.ca
 			</p4>
 	<div class = "cbox">
 
