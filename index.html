@@ -11,6 +11,9 @@
    	<meta content="IE=edge" http-equiv="X-UA-Compatible">
     <link href="demo.css" rel="stylesheet" type="text/css">
   
+	<link rel="stylesheet" href="static/css/chat.css">
+	<link rel="stylesheet" href="static/css/home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
 <body>
@@ -72,54 +75,55 @@
 	<script type="text/javascript" src="custom.js"></script>
 	
 	
+<body>
+
 	<body>
-	<!-- ChatBot -->
-	<div class="chat_icon">
-		<i class="fa fa-comments" aria-hidden="true"></i>
-	</div>
+		<!-- CHAT BAR BLOCK -->
+		<div class="chat-bar-collapsible">
+			<button id="chat-button" type="button" class="collapsible inactive">Chat with me!
+				<i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+			</button>
 	
-	<div class="chat_box">
-		<div class="my-conv-form-wrapper">
-			<form action="" method="GET" class="hidden">
+			<div class="content" style="max-height: 500px;">
+				<div class="full-chat-block">
+					<!-- Message Container -->
+					<div class="outer-container">
+						<div class="chat-container">
+							<!-- Messages -->
+							<div id="chatbox">
+								<h5 id="chat-timestamp">23:33</h5>
+								<p id="botStarterMessage" class="botText"><p class="botText"><span>How are you?</span></p></p>
+							</div>
 	
-		  <select data-conv-question="Hello! What would you like to learn about me?" name="category">
-			<option value="software">Software Development </option>
-			<option value="leadership">Leadership Experience</option>
-		  </select>
+							<!-- User input box -->
+							<div class="chat-bar-input-block">
+								<div id="userInput">
+									<input id="textInput" class="input-box" type="text" name="msg" placeholder="Tap 'Enter' to send a message">
+									<p></p>
+								</div>
 	
-		  <div data-conv-fork="category">
-			<div data-conv-case="software">
-			  <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">    
+								<div class="chat-bar-icons">
+									<i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart" onclick="heartButton()"></i>
+									<i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+								</div>
+							</div>
+	
+							<div id="chat-bar-bottom">
+								<p></p>
+							</div>
+	
+						</div>
+					</div>
+	
+				</div>
 			</div>
-			<div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
-			  <input type="text" name="companyName" data-conv-question="Please, enter your company name"> 
-			</div>
-		  </div>
 	
-		  <input type="text" name="name" data-conv-question="What's your name?">
-	
-		  <input type="text" data-conv-question="Hi {name}, it's a pleasure to meet you." data-no-answer="true">
-	
-		  <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
-	
-		  <select data-conv-question="Please Confirm" name="option">
-			<option value="Yes">Confirm</option>
-			<option value="No">Nevermind</option>
-		  </select>
-
-		  <div data-conv-fork="option">
-		  <div data-conv-case="No">
-			<input type="text" name="domainName" data-conv-question="It was great talking to you!">    
-		  </div>
 		</div>
-
-	
-		  </form>
-		</div>
-	</div>
-	<!-- ChatBot end -->
 	
 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="static/scripts/responses.js"></script>
+	<script src="static/scripts/chat.js"></script>
 	
 	</body>
 	
@@ -134,7 +138,7 @@
 
 <div id="contactme" class="container">
 	<div class = "parallax">
-			<h7> <span>Contact me</span></h7>
+			<h7> <span>Let's chat!</span></h7>
 			<p4> 
 				(647) 809 - 9667 <br> </br>
 				raghad.asfour@uwaterloo.ca

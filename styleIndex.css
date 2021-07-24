@@ -349,10 +349,10 @@ span:before{
 }
 .chat_box{
 	width: 400px;
-	height: 90vh;
+	height: 100vh;
 	position: fixed;
 	bottom: 100px;
-	right: 20px;
+	right: 30px;
 	background:#dedede;
 	z-index: 1000;
 	transition: all 0.3s ease-out;
@@ -362,10 +362,12 @@ span:before{
 	transform: scaleY(1);
 }
 #messages{
-	padding: 10px;
+  position: relative;
+  left: 2%;
+  right: 2%;
 }
 .my-conv-form-wrapper textarea{
-	height: 30px;
+	height: 1px;
 	overflow: hidden;
 	resize: none;
 }
