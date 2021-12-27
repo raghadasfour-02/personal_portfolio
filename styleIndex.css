@@ -132,12 +132,19 @@ html {
 }
 /* Style the links inside the navigation bar */
 .topnav {
-  position: absolute;
-  top: 10px;
-  left: 300px;
-  z-index: 1;
   display: flex;
+  height: 80px;
   width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+.brand-title {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
 }
 .topnav a:before{
   color:#64ffda;
@@ -163,22 +170,21 @@ html {
 }
 .topnav ul{
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  width: 100%;
-  justify-content: center;
 }
 .topnav ul li{
-  margin:  2rem;
-  padding: 2rem;
+  margin: 0 5px;
 }
 .topnav ul li a{
-  padding: 20px;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  width: 100%;
-  height: 60px;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
 }
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -190,9 +196,62 @@ html {
   color: white;
 }
 
-body{
-  margin: 0;
+topnav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
 }
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  topnav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  topnav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  topnav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  topnav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  topnav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  topnav ul li a.active,
+  topnav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
 .fwh-slide{
   height: 30vh;
   background-color: #0a192f;
@@ -213,7 +272,6 @@ body {
   font-family: 'Source Code Pro', monospace;
   font-size: 30px;
 }
-
 body{
   margin: 0;
   background-color:#0a192f;  
@@ -319,7 +377,6 @@ a{
   font-size: 19px;
   line-height: 27px;
   color: #000000;
-
 }
 
 h1 {
