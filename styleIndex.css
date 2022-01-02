@@ -1,65 +1,65 @@
-#logo{
+#raghadasfour{
   position: absolute;
   top: 40%;
   left: 25%;
   animation: fill 0.5s ease forwards 3s;
 }
-#logo path:nth-child(1){
+#raghadasfour path:nth-child(1){
   stroke-dasharray: 349.7790832519531;
   stroke-dashoffset: 349.7790832519531;
   animation: line-anim 2s ease forwards;
 }
-#logo path:nth-child(2){
+#raghadasfour path:nth-child(2){
   stroke-dasharray: 312;
   stroke-dashoffset: 312;
   animation: line-anim 2s ease forwards 0.2s;
 }
-#logo path:nth-child(3){
+#raghadasfour path:nth-child(3){
   stroke-dasharray: 406;
   stroke-dashoffset: 406;
   animation: line-anim 2s ease forwards 0.4s;
 }
-#logo path:nth-child(4){
+#raghadasfour path:nth-child(4){
   stroke-dasharray: 339;
   stroke-dashoffset: 339;
   animation: line-anim 2s ease forwards 0.6s;
 }
-#logo path:nth-child(5){
+#raghadasfour path:nth-child(5){
   stroke-dasharray: 312;
   stroke-dashoffset: 312;
   animation: line-anim 2s ease forwards 0.8s;
 }
-#logo path:nth-child(6){
+#raghadasfour path:nth-child(6){
   stroke-dasharray: 364;
   stroke-dashoffset: 364;
   animation: line-anim 2s ease forwards 1.0s;
 }
-#logo path:nth-child(7){
+#raghadasfour path:nth-child(7){
   stroke-dasharray: 312;
   stroke-dashoffset: 312;
   animation: line-anim 2s ease forwards 1.2s;
 }
-#logo path:nth-child(8){
+#raghadasfour path:nth-child(8){
   stroke-dasharray: 315;
   stroke-dashoffset: 315;
   animation: line-anim 2s ease forwards 1.4s;
 }
-#logo path:nth-child(9){
+#raghadasfour path:nth-child(9){
   stroke-dasharray: 245;
   stroke-dashoffset: 245;
   animation: line-anim 2s ease forwards 1.6s;
 }
-#logo path:nth-child(10){
+#raghadasfour path:nth-child(10){
   stroke-dasharray: 360;
   stroke-dashoffset: 360;
   animation: line-anim 2s ease forwards 1.8s;
 }
-#logo path:nth-child(11){
+#raghadasfour path:nth-child(11){
   stroke-dasharray: 307;
   stroke-dashoffset: 307;
   animation: line-anim 2s ease forwards 2.0s;
 }
-#logo path:nth-child(12){
+#raghadasfour path:nth-child(12){
   stroke-dasharray: 349;
   stroke-dashoffset: 349;
   animation: line-anim 2s ease forwards 2.2s;
@@ -109,10 +109,11 @@ html {
 }
 /*Parallax Effect */
 .container{
-  padding-top: 100px;
-  max-width: 950 px;
-  margin: 0 auto;
-  background: #0000;
+  padding-top: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  background: #0a192f;
 }
 .parallax{
   background: url('./img/code.jpg');
@@ -135,7 +136,7 @@ html {
   display: flex;
   height: 80px;
   width: 100%;
-  background: #1b1b1b;
+  background: #0a192f;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
@@ -186,16 +187,11 @@ html {
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
-/* Change the color of links on hover */
-.topnav a:hover {
-  color: white;
+.outline:hover{
+  border-radius: 8px;
+  background-color: #0a192f;
+  border: 2px solid #64ffda;
 }
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  color: white;
-}
-
 topnav .menu-btn i{
   color: #fff;
   font-size: 22px;
@@ -205,12 +201,8 @@ topnav .menu-btn i{
 input[type="checkbox"]{
   display: none;
 }
-@media (max-width: 1000px){
-  topnav{
-    padding: 0 40px 0 50px;
-  }
-}
-@media (max-width: 920px) {
+
+@media (max-width: 90px) {
   topnav .menu-btn i{
     display: block;
   }
@@ -253,7 +245,7 @@ input[type="checkbox"]{
 }
 
 .fwh-slide{
-  height: 30vh;
+  height: 80vh;
   background-color: #0a192f;
   box-sizing: border box;
   padding: 200px;
@@ -290,6 +282,14 @@ h2{
   left: 75px;
   color:#CCD6F6;
 }
+h9{
+  font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 00px;
+  color:#CCD6F6;
+}
 h7 {
   font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
   font-style: normal;
@@ -302,30 +302,12 @@ h7 {
   z-index: 1000;
   color:#CCD6F6;
 }
-p4{
-  font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
-    font-style: normal;
-    color:#CCD6F6;
-    position: absolute;
-    top: 10px;
-    left: 100px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 17px;
-    position: absolute;
-    top: 1740px;
-    left: 630px;
-    text-align: center;
-    z-index: 2000;
-}
 p{
   font-family: 'Source Code Pro', monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 0 px;
-
   color: #64ffda;
 }
 p2{
@@ -342,8 +324,15 @@ p3{
   font-weight: bold;
   font-size: 70.8px;
   line-height: 80px;
-
   color: #a8b2d1;
+}
+small_green_font{
+  font-family: 'Source Code Pro', monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 0 px;
+  color: #64ffda;
 }
 @keyframes transitionIn{
   from{
@@ -359,7 +348,6 @@ p3{
 .main{
   animation: transitionIn 0.75s;
   margin: 10px;
-  width: 50px;
 }
 a{
   font-family: "verdana";
@@ -388,11 +376,27 @@ h1 {
   font-size: 25px;
 
 }
+h8 {
+  text-align: left;
+  font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+  color: #CCD6F6;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+}
 span:after,
 span:before{
     content:"\00a0\00a0\00a0\00a0\00a0";
     text-decoration:line-through;
 }
+
+.my-grid {
+  padding-left:100px;
+  padding-right:100px;
+  background-color: #0a192f;
+  
+}
+
 /*ChatBot*/
 .chat_icon{
 	position: fixed;
@@ -545,7 +549,7 @@ span:before{
   background-color: #0077B5;
 }
 /* Footer */
-.footer{
+footer{
   position: absolute;
   height: 200px;
   top: 1220px;
