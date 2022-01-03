@@ -113,7 +113,7 @@ img:hover {
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #0a192f;
-  padding-bottom:7%;
+  padding-bottom:2%;
 }
 
 /* Style the links inside the navigation bar */
@@ -370,16 +370,17 @@ span:before{
 }
 
 .my-grid {
-  padding-left:100px;
-  padding-right:100px;
+  padding-left:7%;
+  padding-right:7%;
+  padding-top:7%;
   background-color: #0a192f;
 }
 
 .main-grid {
-  padding-left:200px;
-  padding-top:100px;
-  padding-bottom:200px;
-  padding-right:100px;
+  padding-left:15%;
+  padding-top:13%;
+  padding-bottom:5%;
+  padding-right:7%;
   background-color: #0a192f;
 }
 
