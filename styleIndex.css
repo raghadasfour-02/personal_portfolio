@@ -85,9 +85,7 @@ img {
   width: 400px;
   height: 400px;
   animation: img 0.85s;
-  
 }
-
 @keyframes img {
   from {
     opacity: 0;
@@ -102,25 +100,6 @@ img {
 img:hover {
     opacity: 0.5;
 }
-
-/* Scrolling effect */
-html {
-  scroll-behavior: smooth;
-}
-/*Parallax Effect */
-.container{
-  padding-top: 0px;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  background: #0a192f;
-}
-.parallax{
-  background: url('./img/code.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  height: 600px;
-}
 .cbox{
   border-radius: 25px;
   background: #0a192f;
@@ -131,119 +110,132 @@ html {
   top: 1650px;
   left: 520px;
 }
-/* Style the links inside the navigation bar */
+/* Add a black background color to the top navigation */
 .topnav {
-  display: flex;
-  height: 80px;
-  width: 100%;
-  background: #0a192f;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px 0 100px;
-  flex-wrap: wrap;
-}
-.brand-title {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 600;
-}
-.topnav a:before{
-  color:#64ffda;
-  opacity: 80%;
-  text-align: right;
-  text-decoration: none;
-  font-family: 'Source Code Pro', monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-}
-.topnav a {
-  display:inline-block;
-  padding:10px;
-  color:#64ffda;
-  opacity: 80%;
-  text-align: right;
-  text-decoration: none;
-  font-family: 'Source Code Pro', monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-}
-.topnav ul{
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-.topnav ul li{
-  margin: 0 5px;
-}
-.topnav ul li a{
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
-.outline:hover{
-  border-radius: 8px;
   background-color: #0a192f;
-  border: 2px solid #64ffda;
+  padding-bottom:7%;
 }
-topnav .menu-btn i{
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
+
+/* Style the links inside the navigation bar */
+.topnav a{
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color:#CCD6F6;
 }
-input[type="checkbox"]{
+.topnav a:not(:first-child){
+  float: right;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color:#CCD6F6;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  color:#64ffda;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
   display: none;
 }
 
-@media (max-width: 90px) {
-  topnav .menu-btn i{
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: #64ffda;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: #64ffda;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
     display: block;
-  }
-  #click:checked ~ .menu-btn i:before{
-    content: "\f00d";
-  }
-  topnav ul{
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    background: #111;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: block;
-    transition: all 0.3s ease;
-  }
-  #click:checked ~ ul{
-    left: 0;
-  }
-  topnav ul li{
-    width: 100%;
-    margin: 40px 0;
-  }
-  topnav ul li a{
-    width: 100%;
-    margin-left: -100%;
-    display: block;
-    font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  #click:checked ~ ul li a{
-    margin-left: 0px;
-  }
-  topnav ul li a.active,
-  topnav ul li a:hover{
-    background: none;
-    color: cyan;
   }
 }
 
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
 .fwh-slide{
   height: 80vh;
   background-color: #0a192f;
@@ -251,14 +243,15 @@ input[type="checkbox"]{
   padding: 200px;
 }
 
+.outline:hover{
+  border-radius: 8px;
+  background-color: #0a192f;
+  border: 2px solid #64ffda;
+}
+
 /* Navigation bar counter */
 body {
   counter-reset: h2counter;
-}
-.topnav a:before {
-	content: "0" counter(h2counter) ".\0000a0\0000a0";
-	counter-increment: h2counter;
-	counter-reset: h3counter;
 }
 .a{
   font-family: 'Source Code Pro', monospace;
@@ -315,7 +308,7 @@ p2{
   font-style: normal;
   font-weight: bold;
   font-size: 70.8px;
-  line-height: 00px;
+  line-height: 70px;
   color:#CCD6F6;
 }
 p3{
@@ -323,7 +316,7 @@ p3{
   font-style: normal;
   font-weight: bold;
   font-size: 70.8px;
-  line-height: 80px;
+  line-height: 70px;
   color: #a8b2d1;
 }
 small_green_font{
@@ -351,20 +344,6 @@ small_green_font{
 }
 a{
   font-family: "verdana";
-
-}
-.main{
-  position: absolute;
-  width: 780px;
-  height: 440px;
-  left: 200px;
-  top: 150px;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 19px;
-  line-height: 27px;
-  color: #000000;
 }
 
 h1 {
@@ -394,7 +373,14 @@ span:before{
   padding-left:100px;
   padding-right:100px;
   background-color: #0a192f;
-  
+}
+
+.main-grid {
+  padding-left:200px;
+  padding-top:100px;
+  padding-bottom:200px;
+  padding-right:100px;
+  background-color: #0a192f;
 }
 
 /*ChatBot*/
