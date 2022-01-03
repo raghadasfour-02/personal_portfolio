@@ -236,23 +236,22 @@ img:hover {
     text-align: left;
   }
 }
-.fwh-slide{
-  height: 80vh;
-  background-color: #0a192f;
-  box-sizing: border box;
-  padding: 200px;
-}
 
+.green-outline{
+  border-radius: 8px;
+  background-color: #0a192f;
+  border: 2px solid #64ffda;
+}
 .outline:hover{
   border-radius: 8px;
   background-color: #0a192f;
   border: 2px solid #64ffda;
 }
 
-/* Navigation bar counter */
-body {
-  counter-reset: h2counter;
+.grid-header{
+  margin-bottom:100px;
 }
+/* Navigation bar counter */
 .a{
   font-family: 'Source Code Pro', monospace;
   font-size: 30px;
@@ -260,6 +259,7 @@ body {
 body{
   margin: 0;
   background-color:#0a192f;  
+  overflow-x: hidden;
 }
 /* Heading styles */
 
@@ -536,11 +536,10 @@ span:before{
 }
 /* Footer */
 footer{
-  position: absolute;
-  height: 200px;
-  top: 1220px;
-  left: 470px;
+  position: relative;
+  padding-top: 7%;
+  padding-bottom: 2%;
   width: 100%;
-  color: white;
+  color: #0a192f;
   text-align: center;
 }
