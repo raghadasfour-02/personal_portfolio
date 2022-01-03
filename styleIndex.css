@@ -422,62 +422,51 @@ span:before{
 .hidden{
 	display: none !important;
 }
-/* Style CSS grid*/
-.wrapper{
-  padding-top: 190px;
-  display:grid;
-  grid-template-columns:1fr 2fr 1fr;
-  grid-auto-rows:minmax(100px, auto);
-  grid-gap:1em;
-  justify-items:normal;
-  align-items:normal;
-  margin-left: 70px;
-  margin-right: 70px;
+/* If the screen size is 601px wide or more */
+@media screen and (min-width: 601px) {
+  p2{
+    font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 70px;
+    color:#CCD6F6;
+  }
+  p2{
+    font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 70px;
+    color:#CCD6F6;
+  }
 }
 
-.wrapper > div{
-  background-size: cover;
-  padding:1em;
+/* If the screen size is 600px wide or less*/
+@media screen and (max-width: 600px) {
+  p2{
+    font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 00px;
+    color:#CCD6F6;
+  }
+  p3{
+    font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 00px;
+    color:#CCD6F6;
+  }
 }
-
-.box1{
-  background: url('./img/tfg.png');
-  grid-column:1/3;
-  grid-row: 1/3;
-  border-radius: 15px 15px 50px 15px;
-  border: 2px solid #64FFDA;
+/* When the screen is less than 600 pixels wide, hide social media icons */
+@media screen and (max-width: 600px) {
+  .social-menu{
+    display: none;
+  }
 }
-
-.box2{
-  background-image: url("img/trillium.png");
-  grid-column:3;
-  grid-row:1/5;
-  border-radius: 50px 15px 15px 50px;
-  border: 2px solid #64FFDA;
-}
-
-.box3{
-  background-image: url("img/netact.png");
-  grid-column:2/3;
-  grid-row:3/5;
-  border-radius: 50px 50px 15px 15px;
-  border: 2px solid #64FFDA;
-}
-
-.box4{
-  background-image: url("img/stem.png");
-  grid-column:1;
-  grid-row:3/5;
-  border-radius: 15px 50px 15px 15px;
-  border: 2px solid #64FFDA;
-}
-.box1:hover, .box2:hover, .box3:hover, .box4:hover {
-  background-color: #CCD6F6;
-  transition: 0.25s ease-in-out;
-  border: 1px solid #CCD6F6;
-  cursor: pointer;
-}
-
 /*  Responsive social media menu */
 .social-menu{
   margin-bottom: 80px;
