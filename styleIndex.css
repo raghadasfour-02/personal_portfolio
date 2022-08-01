@@ -384,6 +384,72 @@ span:before{
   background-color: #0a192f;
 }
 
+/* Projects Section CSS */
+section {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #0a192f, #64ffda)
+}
+.inner-section {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #64ffda, #0a192f);
+  border-top: 1px solid #ffffff;
+}
+section ul{
+  position: relative;
+  padding-top: 10%;
+  display: flex;
+  z-index: 2;
+}
+section ul li{
+  position: relative;
+  list-style: none;
+  margin: 30px;
+}
+section ul li a{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  color: #fff;
+  font-size: 2em;
+  border: 1px solid rgb(255, 255, 255, 0.4);
+  border-right: 1px solid rgb(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+  box-shadow: 0 5px 45px rgb(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+  overflow: hidden;
+}
+section ul li a:hover{
+  transform: translateY(-20px);
+}
+section ul li a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background: rgb(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(450px);
+  transition: 2s;
+}
+section ul li a:hover::before{
+  transform: skewX(45deg) translateX(-250px);
+}
+
 /*ChatBot*/
 .chat_icon{
 	position: fixed;
