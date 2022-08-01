@@ -405,8 +405,16 @@ section {
 section ul{
   position: relative;
   padding-top: 10%;
+  padding-bottom: 10%;
   display: flex;
   z-index: 2;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
 }
 section ul li{
   position: relative;
@@ -433,7 +441,7 @@ section ul li a{
   overflow: hidden;
 }
 section ul li a:hover{
-  transform: translateY(-20px);
+  transform: translateY(-50px);
 }
 section ul li a::before{
   content: '';
@@ -443,8 +451,8 @@ section ul li a::before{
   width: 50px;
   height: 100%;
   background: rgb(255, 255, 255, 0.5);
-  transform: skewX(45deg) translateX(450px);
-  transition: 2s;
+  transform: skewX(45deg) translateX(550px);
+  transition: 0.5s;
 }
 section ul li a:hover::before{
   transform: skewX(45deg) translateX(-250px);
