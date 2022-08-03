@@ -425,7 +425,7 @@ span:before{
 .outer-section {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   background: linear-gradient(to bottom, #0a192f, #64ffda)
@@ -433,7 +433,7 @@ span:before{
 .inner-section {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   background: linear-gradient(to bottom, #64ffda, #0a192f);
@@ -460,8 +460,8 @@ section ul li{
 }
 section ul li a{
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   display: flex;
   border-radius: 10px;
   justify-content: center;
