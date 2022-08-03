@@ -278,6 +278,8 @@ a{
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
+  padding-left: 5%;
+  text-decoration: none;
 }
 .outer-section a:hover{
   text-align: left;
@@ -286,6 +288,16 @@ a{
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
+  text-decoration: none;
+}
+h6{
+  text-align: left;
+  font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
+  color: #1a3d71;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2px;
+  text-decoration: none;
 }
 h7{
   font-family: Calibre, "San Francisco", "SF Pro Text", sans-serif;
@@ -439,7 +451,7 @@ span:before{
   background: linear-gradient(to bottom, #64ffda, #0a192f);
   border-top: 1px solid #ffffff;
 }
-section ul{
+section dl{
   position: relative;
   padding-top: 10%;
   padding-bottom: 10%;
@@ -453,12 +465,12 @@ section ul{
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
-section ul li{
+section dl dt{
   position: relative;
   list-style: none;
   margin: 30px;
 }
-section ul li a{
+section dl dt{
   position: relative;
   width: 300px;
   height: 300px;
@@ -477,10 +489,10 @@ section ul li a{
   transition: 0.5s;
   overflow: hidden;
 }
-section ul li a:hover{
+section dl dt:hover{
   transform: translateY(-50px);
 }
-section ul li a::before{
+section dl dt::before{
   content: '';
   position: absolute;
   top: 0;
@@ -491,7 +503,7 @@ section ul li a::before{
   transform: skewX(45deg) translateX(550px);
   transition: 0.5s;
 }
-section ul li a:hover::before{
+section dl dt:hover::before{
   transform: skewX(45deg) translateX(-250px);
 }
 
